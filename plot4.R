@@ -27,3 +27,5 @@ g <- g + geom_bar(stat="identity") + xlab("year") + ylab(expression('Total PM'[2
 
 print(g)
 dev.off()
+
+## The answer is yes, coal emissions have decreased across the US
