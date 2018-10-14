@@ -2,6 +2,15 @@
 
 # Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
 
+## Read in data (files already placed in working directory)
+
+if(!exists("NEI")){
+        NEI <- readRDS("summarySCC_PM25.rds")
+}
+if(!exists("SCC")){
+        SCC <- readRDS("Source_Classification_Code.rds")
+}
+
 ## Load the required library
 
 library(ggplot2)

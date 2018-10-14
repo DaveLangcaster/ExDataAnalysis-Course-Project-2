@@ -2,6 +2,15 @@
 
 # How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
         
+## Read in data (files already placed in working directory)
+
+if(!exists("NEI")){
+        NEI <- readRDS("summarySCC_PM25.rds")
+}
+if(!exists("SCC")){
+        SCC <- readRDS("Source_Classification_Code.rds")
+}
+
 ## Load the required library
 
 library(ggplot2)
