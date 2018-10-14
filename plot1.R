@@ -4,13 +4,13 @@
 
 ## Aggregate the data 
 
-allyears <- aggregate(Emissions~year,data = NEI,FUN = sum)
+allYears <- aggregate(Emissions~year,data = NEI,FUN = sum)
 
 ## Plot the data
 
 png('plot1.png')
 
-barplot(height=allyears$Emissions, names.arg=allyears$year, xlab="years", ylab=expression('total PM'[2.5]*' emission'),main=expression('Total PM'[2.5]*' emissions at various years'))
+barplot(height=allYears$Emissions, names.arg=allYears$year, xlab="years", ylab=expression('total PM'[2.5]*' emission'),main=expression('Total PM'[2.5]*' emissions at various years'))
 
 dev.off()
 
